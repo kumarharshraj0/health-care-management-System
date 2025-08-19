@@ -19,7 +19,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/appointment/getall",
+          "https://health-care-management-system-backend-l7jp.onrender.com/api/v1/user/login/api/v1/appointment/getall",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
