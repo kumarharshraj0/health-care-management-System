@@ -23,7 +23,7 @@ const AddNewAdmin = () => {
     try {
       await axios
         .post(
-          "http://localhost:4000/api/v1/user/admin/addnew",
+          "https://health-care-management-system-backend-l7jp.onrender.com/api/v1/user/login/api/v1/user/admin/addnew",
           { firstName, lastName, email, phone,  dob, gender, password },
           {
             withCredentials: true,
