@@ -71,7 +71,7 @@ const AppointmentForm = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/appointment/post",
+        "https://health-care-management-system-backend-l7jp.onrender.com/api/v1/user/login/api/v1/appointment/post",
         {
           firstName,
           lastName,
