@@ -19,7 +19,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "https://health-care-management-system-backend-l7jp.onrender.com/api/v1/user/login/api/v1/appointment/getall",
+          "http://localhost:4000/api/v1/appointment/update/${appointmentId}",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
@@ -32,7 +32,7 @@ const Dashboard = () => {
     const fetchStats = async () => {
       try {
         const { data } = await axios.get(
-          "https://health-care-management-system-backend-l7jp.onrender.com/api/v1/user/login/api/v1/appointment/stats",
+          "http://localhost:4000/api/v1/appointment/stats",
           { withCredentials: true }
         );
         console.log("📊 Stats from backend:", data); // 👈 console check
