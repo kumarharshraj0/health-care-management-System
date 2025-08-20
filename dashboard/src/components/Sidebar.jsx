@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("https://health-care-management-system-backend-l7jp.onrender.com/api/v1/user/login/api/v1/user/admin/logout", {
+      .get("http://localhost:4000/api/v1/user/admin/logout", {
         withCredentials: true,
       })
       .then((res) => {
