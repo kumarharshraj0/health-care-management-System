@@ -23,7 +23,7 @@ It is designed to simplify healthcare operations by providing patients, doctors,
 - **Database**: MongoDB (Mongoose ORM)
 - **Authentication**: JWT, bcrypt
 - **Version Control**: Git & GitHub
-- **Deployment**: (Heroku / Render / Vercel / Netlify) *(update if deployed)*
+-
 
 ---
 
