@@ -35,7 +35,7 @@ const AppointmentForm = () => {
     const fetchDoctors = async () => {
       try {
         const { data } = await axios.get(
-          "https://health-care-management-system-backend-l7jp.onrender.com/api/v1/user/login/api/v1/user/doctors",
+          "http://localhost:4000/api/v1/user/doctors",
           { withCredentials: true }
         
         );
@@ -71,7 +71,7 @@ const AppointmentForm = () => {
 
     try {
       const { data } = await axios.post(
-        "https://health-care-management-system-backend-l7jp.onrender.com/api/v1/user/login/api/v1/appointment/post",
+        "http://localhost:4000/api/v1/appointment/post",
         {
           firstName,
           lastName,
